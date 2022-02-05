@@ -11,6 +11,7 @@ package com.solovey.homeWorkFour;
 - Найти первый и последний положительные элементы.
  */
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -21,11 +22,11 @@ public class TaskNine {
         int size = scanner.nextInt();
         int[] array = new int[size];
         Random random = new Random(); // Класс Random - применяется для генерации случайных чисел
-        System.out.print("Случайные элементы массива: ");
         for (int i = 0; i < size; i++) {
-            System.out.print((array[i] = random.nextInt()) + " ");
+            array[i] = random.nextInt();
         }
-        System.out.println();
+        System.out.println("Случайные элементы массива: " + Arrays.toString(array));
+        // Класс Arrays, метод toString(), который возвращает текстовое представление массива
 
         // Вычисляем сумму отрицательных чисел
         int sumNegativeNumbers = 0;

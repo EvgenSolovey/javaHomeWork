@@ -7,6 +7,7 @@ package com.solovey.homeWorkFour;
 элементы массива.
  */
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class TaskSix {
@@ -20,11 +21,8 @@ public class TaskSix {
         for (int i = 0; i < size; i++) {
             array[i] = scanner.nextInt();
         }
-        System.out.print("Элементы масcива: ");
-        for (int i = 0; i < size; i++) {
-            System.out.print(array[i] + " ");
-        }
-        System.out.println();
+        System.out.println("Элементы масcива: " + Arrays.toString(array));
+        // Класс Arrays, метод toString(), который возвращает текстовое представление массива
 
         // Находим сумму элементов массива
         for (int i = 0; i < size; i++) {

@@ -9,6 +9,7 @@ package com.solovey.homeWorkFour;
 экран.
  */
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -21,9 +22,10 @@ public class TaskEight {
         Random random = new Random(); // Класс Random - применяется для генерации случайных чисел
         System.out.print("Случайные элементы массива: ");
         for (int i = 0; i < size; i++) {
-            System.out.print((array[i] = random.nextInt()) + " ");
+            array[i] = random.nextInt();
         }
-        System.out.println();
+        System.out.println(Arrays.toString(array));
+        // Класс Arrays, метод toString(), который возвращает текстовое представление массива
 
         // Определяем минимальный и максимальный элементы
         int min = array[0];

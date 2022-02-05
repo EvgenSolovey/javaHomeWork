@@ -24,11 +24,11 @@ public class TaskTen {
         int size = scanner.nextInt();
         int[] array = new int[size];
         Random random = new Random(); // Класс Random - применяется для генерации случайных чисел
-        System.out.print("Случайные элементы массива: ");
         for (int i = 0; i < size; i++) {
-            System.out.print((array[i] = random.nextInt()) + " ");
+            array[i] = random.nextInt();
         }
-        System.out.println();
+        System.out.println("Случайные элементы массива: " + Arrays.toString(array));
+        // Класс Arrays, метод toString(), который возвращает текстовое представление массива
 
         // Создаём одномерный массив, содержащий только четные числа из первого массива
         int j = 0;
